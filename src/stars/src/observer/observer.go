@@ -3,21 +3,21 @@ package observer
 import "fmt"
 
 type Observer interface {
-  Observe(source string)
+  Observe()
 }
 
-func Observe(source, otype string) {
+func Observe(otype string) {
   var o Observer
 
   switch otype {
   case "Hubble":
-    o = &HubbleObserver()
+    o = &HubbleObserver{}
   case "Toy":
-    o = &ToyObeserver()
+    o = &ToyObserver{}
   default:
     fmt.Println("Unsupported oberserver type", otype)
     return
   }
 
-  o.Observe(source)
+  o.Observe()
 }
