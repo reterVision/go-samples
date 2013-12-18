@@ -3,10 +3,10 @@ package observer
 import "fmt"
 
 type Observer interface {
-  Observe()
+  Observe(name string)
 }
 
-func Observe(otype string) {
+func Observe(otype, name string) {
   var o Observer
 
   switch otype {
@@ -19,5 +19,5 @@ func Observe(otype string) {
     return
   }
 
-  o.Observe()
+  o.Observe(name)
 }

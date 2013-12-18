@@ -7,8 +7,8 @@ type HubbleObserver struct {
   diameter float32
 }
 
-func (h *HubbleObserver)Observe() {
-  fmt.Println("Observing the universe by Hubble")
+func (h *HubbleObserver)Observe(name string) {
+  fmt.Printf("Observing the universe %s by Hubble\n", name)
   fmt.Println("Type:", h.name)
   fmt.Println("Observation diameter:", h.diameter)
 }

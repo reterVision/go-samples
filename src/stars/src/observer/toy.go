@@ -7,8 +7,8 @@ type ToyObserver struct {
   diameter float32
 }
 
-func (t *ToyObserver)Observe() {
-  fmt.Println("Observing the universe by Toy")
+func (t *ToyObserver)Observe(name string) {
+  fmt.Printf("Observing the universe %s by Toy\n", name)
   fmt.Println("Type:", t.name)
   fmt.Println("Observation diameter:", t.diameter)
 }

@@ -7,5 +7,5 @@ func TestToy(t *testing.T) {
   toy.name = "Optimus"
   toy.diameter = 2.4
 
-  toy.Observe()
+  toy.Observe("asgard")
 }

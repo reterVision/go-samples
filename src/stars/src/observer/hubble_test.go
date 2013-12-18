@@ -7,5 +7,5 @@ func TestHubble(t *testing.T) {
   hubble.name = "H264"
   hubble.diameter = 1.2
 
-  hubble.Observe()
+  hubble.Observe("asgard")
 }

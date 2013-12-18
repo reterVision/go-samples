@@ -3,7 +3,7 @@ package universe
 import "testing"
 
 func TestOps(t *testing.T) {
-  uu := NewUniverse()
+  uu := NewUniverse("asgard", 100, 1.0, 1.0)
   if uu == nil {
     t.Error("NewUniverse failed.")
   }
